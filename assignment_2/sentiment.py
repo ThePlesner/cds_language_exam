@@ -60,7 +60,7 @@ def main(data_dir_path, is_sample):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Analyse the sentiment of headlines and generate rolling average plots based on that')
     parser.add_argument('-d', '--data_path', default = 'data/abcnews-date-text.csv')
-    parser.add_argument('-s', '--is_sample', default = False)
+    parser.add_argument('-s', '--is_sample', default = True)
 
     args = parser.parse_args()
 
