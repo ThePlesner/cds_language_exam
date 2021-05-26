@@ -1,0 +1,5 @@
+spacy
+pandas
+tqdm==4.60.0
+matplotlib
+networkx==2.5.1

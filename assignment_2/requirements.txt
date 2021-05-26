@@ -1,0 +1,4 @@
+matplotlib
+spacy==2.3.5
+spacytextblob
+pandas
