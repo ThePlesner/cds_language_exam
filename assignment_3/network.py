@@ -50,10 +50,6 @@ def main(edgelist_path, min_weight):
         centrality_measures = betweenness_df.join(eigenvector_df.set_index('node'), on = 'node').join(degree_df.set_index('node'), on = 'node')
         centrality_measures.to_csv(os.path.join('output', 'measures.csv'))
 
-
-
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Creates a network based on a given edgelist')
     parser.add_argument('-e', '--edgelist_path', default = 'edgelists/edgelist.csv')
