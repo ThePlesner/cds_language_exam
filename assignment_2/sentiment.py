@@ -34,33 +34,33 @@ def create_plot(weekly, monthly):
 
 def main(data_dir_path, is_sample):
     data = pd.read_csv(data_dir_path)
-    if is_sample:
+    if is_sample == 'true' or is_sample == 'True':
         headlines = data['headline_text'][:5000]
         dates = data['publish_date'][:5000]
     else:
         headlines = data['headline_text']
         dates = data['publish_date']
 
-    nlp.add_pipe(SpacyTextBlob())
+    # nlp.add_pipe(SpacyTextBlob())
     
-    scores = generate_scores(headlines)
+    # scores = generate_scores(headlines)
     
-    # Merge together the dates and the scores
-    headlines_df = pd.DataFrame(zip(dates, scores), columns = ('date', 'score'))
-    # As the amount of headlines per date is not consistent, pandas is used to group by dates
-    headlines_df = headlines_df.groupby('date', as_index = False).mean()
-    # Convert dates from strings to actual datetime objects. This will make sorting on dates easier.
-    headlines_df['date'] = pd.to_datetime(headlines_df['date'], format = '%Y%m%d')
+    # # Merge together the dates and the scores
+    # headlines_df = pd.DataFrame(zip(dates, scores), columns = ('date', 'score'))
+    # # As the amount of headlines per date is not consistent, pandas is used to group by dates
+    # headlines_df = headlines_df.groupby('date', as_index = False).mean()
+    # # Convert dates from strings to actual datetime objects. This will make sorting on dates easier.
+    # headlines_df['date'] = pd.to_datetime(headlines_df['date'], format = '%Y%m%d')
 
-    monthly, weekly = create_rolling_means(headlines_df)
+    # monthly, weekly = create_rolling_means(headlines_df)
 
-    create_plot(weekly, monthly)
+    # create_plot(weekly, monthly)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Analyse the sentiment of headlines and generate rolling average plots based on that')
     parser.add_argument('-d', '--data_path', default = 'data/abcnews-date-text.csv')
-    parser.add_argument('-s', '--is_sample', default = True)
+    parser.add_argument('-s', '--is_sample', default = "false")
 
     args = parser.parse_args()
 
