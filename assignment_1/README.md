@@ -58,3 +58,6 @@ Where
 - output_csv_path is the path to an output csv. It will be created if it does not exist already.
 
 **NOTE:** This repository already comes with a populated data-folder and output-folder.
+
+## Result
+The result should be an output folder containing a fresh output.csv file containing the three columns of information for each .txt file in the corpus. 

@@ -64,3 +64,6 @@ Where
 - min_weight is the minimum weight an edge needs to be allowed to join the network. Default is 300.
 
 **NOTE:** This repository already comes with an edgelist and a populated output/ and viz/ folder.
+
+## Results
+The results should be an output-folder containing a measures.csv-file containing the calculated measures and a viz-folder containing a an image of the network. It is mentioned in the delivered pdf that the quality of the network-image is below what i had wished for, but i was among those who were not able to use pygraphviz and therefore had to use the standard drawing-methods from matplotlib. This resulted in an uglier network-image. In the future one would work focused on tweaking parameters in the drawing-method to make the output prettier but from reading the documentation it did not seem like there were alot of buttons to press, so to speak.  

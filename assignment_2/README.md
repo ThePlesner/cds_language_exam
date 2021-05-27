@@ -66,4 +66,4 @@ We can see that something happens around 2008 and 2019. Both of these years take
 
 ### What (if any) inferences might you draw from them?
 
-We can only guess, but around both of these years significant event happened. In 2008 and throughout 2009 we had the financial crisis which might've had a great impact on the headlines of the time. In 2019 Donald Trump was elected. Whether this event was good or bad is not up the author to judge, but certainly it stirret the waters and created a lot of headlines, most of which where voiced negatively.
+We can only guess, but around both of these years significant events happened. In 2008 and throughout 2009 we had the financial crisis which might've had a great impact on the headlines of the time. In 2019 Donald Trump was elected. Whether this event was good or bad is not up the author to judge, but certainly it stirret the waters and created a lot of headlines, most of which where voiced negatively.
